@@ -33,9 +33,10 @@ RUN sudo chown -R coder:coder /home/coder/.local
 # COPY deploy-container/myTool /home/coder/myTool
 
 RUN sudo curl -fsSL https://deb.nodesource.com/setup_15.x | sudo bash -
-RUN sudo apt-get update && apt-get install -y nodejs
-RUN sudo apt-get update && apt-get install -y dotnet6
-RUN sudo apt-get update && apt-get install -y aspnetcore-runtime-6.0
+RUN sudo apt-get update
+RUN sudo apt-get install -y nodejs
+RUN sudo apt-get install -y dotnet6
+RUN sudo apt-get install -y aspnetcore-runtime-6.0
 
 # -----------
 
